@@ -1,0 +1,15 @@
+<results>
+    {% for asset in results %}
+        <{{ asset.asset_type }}>
+            <name>{{ asset.platform_name }}</name>
+            <directorgroup>{{ asset.directorgroup }}</directorgroup>
+            <acfpartner>{{ asset.acfpartner }}</acfpartner>
+            <platformarchitect>{{ asset.platformarchitect }}</platformarchitect>
+            <code>{{ asset.code }}</code>
+            <architectgroup>{{ asset.architectgroup }}</architectgroup>
+            <platformdirector>{{ asset.platformdirector }}</platformdirector>
+            <contact>{{ asset.contact }}</contact>
+            <edm>{{ asset.edm }}</edm>
+        </{{ asset.asset_type }}>
+    {% endfor %}
+</results>

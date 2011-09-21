@@ -1,0 +1,16 @@
+<tree>
+    <{{ asset_type }} key="{{ key }}"
+                      version="{{ version }}">
+        <name>{{ name }}</name>
+        {% for svc in services %}
+        <{{ svc.asset_type }} key="{{ svc.key }}"
+                              version="{{ svc.version }}"
+                              rel="{{ svc.context }}">
+            <name>{{ svc.name }}</name>
+            {% for ifc in svc.interfaces %}
+            <interface />
+            {% endfor %}
+        </{{ svc.asset_type }}>
+        {% endfor %}
+    </{{ asset_type }}>
+</tree>

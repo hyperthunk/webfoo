@@ -1,0 +1,14 @@
+<asset>
+    <name>{{ name }}</name>
+    <displayName>{{ display_name }}</displayName>
+    <createdBy>{{ created_by }}</createdBy>
+    <status>{{ status }}</status>
+    <version>{{ version }}</version>
+    <active>{{ active }}</active>
+    <identity>{{ identity }}</identity>
+    <consumers>
+        {% for c in consumers %}
+            {{ c }}
+        {% endfor %}
+    </consumers>
+</asset>

@@ -1,0 +1,12 @@
+{application, webtest,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { webtest_app, []}},
+  {env, []}
+ ]}.

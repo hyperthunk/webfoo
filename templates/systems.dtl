@@ -1,0 +1,11 @@
+<results>
+    {% for asset in results %}
+        <{{ asset.asset_type }}>
+            <name>{{ asset.system_name }}</name>
+            <rationalisation_category>{{ asset.rationalisation_category }}</rationalisation_category>
+            <aliases>{{ asset.aliases }}</aliases>
+            <salsa_id>{{ asset.salsa_id }}</salsa_id>
+            <active_status>{{ asset.active_status }}</active_status>
+        </{{ asset.asset_type }}>
+    {% endfor %}
+</results>
